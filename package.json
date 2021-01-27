@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@types/ws": "^7.2.6",
+    "discord.js": "^12.5.1",
     "ecstar": "^3.3.0"
   },
   "engines": {

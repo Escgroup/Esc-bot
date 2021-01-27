@@ -1,4 +1,5 @@
 import { Client } from 'ecstar';
+import http from "http"
 
 const client = new Client({
   prefix: ',',
@@ -16,3 +17,8 @@ const client = new Client({
 });
 
 client.login(process.env.TOKEN);
+
+http.createServer((_, res) => {
+  res.write("online");
+  res.end();
+}).listen(8080);
